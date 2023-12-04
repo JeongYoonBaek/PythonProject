@@ -1,2 +1,5 @@
 231204 - 주제선정 및 도서 API (알라딘) KEY 발급
 API KEY : ttbbjy83741424001
+
+알라딘 OPEN API 메뉴얼
+https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit
