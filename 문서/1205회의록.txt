@@ -1,0 +1,111 @@
+2조 231204 회의록 
+================================================
+
+챗봇은 카카오 챗봇 사용
+
+주제 선정 : 도서추천 
+
+카테고리별 api? 아니면 전체 api를 찾기 -> api 연결 하고 코딩 ->  챗봇 시스템 구축 
+url json 요청하고   책제목 : data['item']['title']
+		저자 : data['item']['author']
+		구매링크 : data['item']['link']
+		책표지(JPG) : data['item']['cover']
+		출판사 : data['item']['publisher']
+
+
+api 메뉴얼 : https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit
+알라딘 api 인증키(TTBKey) : ttbbjy83741424002
+API : http://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=10&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=
+
+인사말 나 : ㅎㅇ 
+챗봇 : 반갑습니다.  현재 독자님의 기분은 어떤 상태이신가요?
+감정  0(아무상태x), 1심심, 2기쁨 ,3행복, 4우울 ,5슬픔 ,6화남, 7불안
+
+          			
+기쁨/행복 : 행복하면 의욕이 있으니 활동적인 카테고리, 소설류
+미스터리/탐정 103712
+스릴러 103721 
+51058  일본 추리/미스터리소설  
+
+53515  헬스/피트니스
+53536  요가/체조/스트레칭
+8546    기초영어
+
+우울/슬픔:  
+로맨스소설 50935 
+로맨틱코미디 105289 
+시 50940
+감정장애 104522
+행복론(자기계발) 70211
+
+화남/불안: 감정을 추스릴 수 있도록 도움을 주는 책들을 추천
+마음다스리기(자기계발) 70238
+감정장애 104522
+행복론(자기계발) 70211
+감정장애 104522                       
+
+감정들을 버튼들로 나열 후 독자의 기분을 버튼 클릭하여 그 감정에 알맞는 도서를 추천해준다. 
+
+0번일때
+편집자추천리스트,주목할신간,베스트셀러추천
+랜덤으로 3개씩 정도 추천 
+
+챗봇이 리스트 형태로 책을 추천
+
+231205
+코드
+import requests, json #python에 필요한 (Scanner)과 비슷한 개념
+from flask import Flask,request,jsonify,abort #python 전용 프레임워크
+import sys
+import urllib.request
+
+application = Flask(__name__)
+
+@application.route("/pagetalk", methods=["POST"])
+def Hi():
+    data = request.get_json()
+
+    # 사용자 발화 확인
+    user_message = data['userRequest']['utterance']
+
+    # 리스트에 있는 단어인 경우에만 응답 생성
+    target_words = [ '안녕하세요', '안뇽', '안녕','하이','ㅎㅇ','ㅎ2', '방가방가','hello','hi','하윙']
+    if any(word in user_message for word in target_words):
+        # 베이직 카드 응답 생성
+        card_response = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "basicCard": {
+                            "title": "당신의 기분은 어떠신가요?",
+                            "description": "현재 기분에 따라 책을 추천해드립니다.",
+                            "thumbnail": {
+                                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXz3mcEcDfeoyIGMf5LlkRBAE4ib2o20MJBQ&usqp=CAU"
+                            },
+                            "buttons": [
+                                {"label": "행복/기쁨", "action": "message", "messageText": "행복/기쁨을 선택했습니다.","action": "block", "blockId": "블록_기쁨_행복"},
+                                {"label": "슬픔/우울", "action": "message", "messageText": "슬픔/우울을 선택했습니다."},
+                                {"label": "분노/불안", "action": "message", "messageText": "분노/불안을 선택했습니다."}
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+
+        response = card_response
+    else:
+        response = {"version": "2.0", "template": {"outputs": [{"simpleText": {"text": "응답 대상이 아닙니다."}}]}}
+
+    # 응답 전송
+    return jsonify(response)
+
+    # api URL
+    #url = 'https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=10&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId='+num
+
+if __name__ == "__main__":
+    application.run(host='0.0.0.0', port=80)
+  
+
+
