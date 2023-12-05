@@ -8,7 +8,7 @@
 카테고리별 api? 아니면 전체 api를 찾기 -> api 연결 하고 코딩 ->  챗봇 시스템 구축 
 
 api 메뉴얼 : https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit
-알라딘 api 인증키(TTBKey) : ttbbjy83741424001
+알라딘 api 인증키(TTBKey) : ttbbjy83741424002
 
 인사말 나 : ㅎㅇ 
 챗봇 : 반갑습니다.  현재 독자님의 기분은 어떤 상태이신가요?
