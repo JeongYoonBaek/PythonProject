@@ -15,25 +15,26 @@ url json 요청하고   책제목 : data['item']['title']
 
 api 메뉴얼 : https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit
 알라딘 api 인증키(TTBKey) : ttbbjy83741424002
-API : http://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=10&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=
+API : http://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=
 
 인사말 나 : ㅎㅇ 
 챗봇 : 반갑습니다.  현재 독자님의 기분은 어떤 상태이신가요?
 감정  0(아무상태x), 1심심, 2기쁨 ,3행복, 4우울 ,5슬픔 ,6화남, 7불안
 
-          			
+------정윤 ------------------------         			
 기쁨/행복 : 행복하면 의욕이 있으니 활동적인 카테고리, 소설류
-미스터리/탐정 103712
-스릴러 103721 
-51058  일본 추리/미스터리소설  
-
-53515  헬스/피트니스
-53536  요가/체조/스트레칭
-8546    기초영어
+미스터리/탐정 103712 3개
+스릴러 103721  3개
+51058  일본 추리/미스터리소설  3개
+53515  헬스/피트니스 3개
+53536  요가/체조/스트레칭 3개
+8546    기초영어 3개
 
 우울/슬픔:  
 로맨스소설 50935 
 로맨틱코미디 105289 
+
+---------지웅 -----------------
 시 50940
 감정장애 104522
 행복론(자기계발) 70211
