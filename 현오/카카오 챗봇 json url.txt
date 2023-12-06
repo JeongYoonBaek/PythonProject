@@ -1,0 +1,36 @@
+카카오 챗봇 Json 이용
+행복/기쁨
+미스터리 url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=103712
+스릴러 url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=103721
+헬스 url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=53515
+요가/스트레칭 url : https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=53536
+기초 영어 url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=8546
+
+슬픔/우울
+로맨스소설 url:https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=50935
+로맨틱코미디 url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=105289
+시 url : https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=50940
+감정장애 url : https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=104522
+행복론(자기계발) url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=70211
+
+분노/불안
+감정장애 url :  https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=104522
+행복론(자기계발) url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=70211
+마음다스리기(자기계발) url: https://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttbbjy83741424002&QueryType=Bestseller&MaxResults=3&start=1&SearchTarget=Book&output=JS&Version=20131101&CategoryId=70238
+
+
+카테고리가 12개이다
+따라 url도 12개
+각각 5 , 5 , 3개 로 줄여지고 거기서 랜덤으로 1개의 카테고리만 설정되게
+
+행복/기쁨
+6개 url
+랜덤으로 1개의 카테고리만 설정하여서
+( 리스트안에 url 6개 넣어서, 랜덤으로 1개만 추출하게하고
+1개추출된곳에서 3개의 상품만 나올수잇게 해줘야한다)
+
+우울/슬픔
+5개 url
+
+분노/불안
+3개 url
