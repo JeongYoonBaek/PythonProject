@@ -10,3 +10,5 @@ https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/
 231206 - 감정 분류해서 독자에게 책 추천 기능구현 완료 
 
 231207 - 챗봇 디자인 작업 90% 완료
+
+231208 - 디자인 작업 완료 
