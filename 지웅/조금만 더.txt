@@ -1,0 +1,51 @@
+from bs4 import BeautifulSoup
+import requests
+
+kwd = input("검색할 키워드를 입력해주세요:")
+url = "https://www.nl.go.kr/NL/contents/search.do?srchTarget=total&pageNum=1&pageSize=10&insiteschStr=&schQuery=&mainSrchField=1&kwd="+kwd
+headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/100.0.48496.75" }
+
+original_html = requests.get(url, headers=headers)
+soup = BeautifulSoup(original_html.text, "html.parser")
+
+value = soup.find()
+
+# 검색결과
+url1=[]
+img_url=[]
+
+try:
+    #제목 불러오는 거
+    articles = soup.select("div.cont_list.list_type>div.row>span.txt_left.row_txt_tit>a")
+    print(articles)
+    for item in articles:
+        print(item.get_text())
+
+    div_list = soup.find_all("span",class_="txt_left row_txt_tit")
+    div = div_list[0]
+    div = div.find("a")["href"]
+    print(div)
+
+
+    url1.append('https://www.nl.go.kr/NL/contents/search.do?srchTarget=total&pageNum=1&pageSize=10&insiteschStr=&schQuery=&mainSrchField=1&kwd='+kwd+div)
+    print(url1)
+    purl = url1
+
+
+    # url2=''.join(url1)
+    # print(url2)
+
+
+
+
+
+
+
+
+
+except Exception as e:
+    print('error')
+    print(e)
+
+    # 검색된 기사의 갯수
+    print(len(articles),"개의 기사가
