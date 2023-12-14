@@ -18,3 +18,5 @@ https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/
 231212 - PPT 자료 준비 중 
 
 231213 - 추가 기능구현 및 PPT 작업 완료 
+
+ppt : https://www.canva.com/design/DAF2vihE3xI/S447WmK0VCXIdQevq79Mrw/edit?utm_content=DAF2vihE3xI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
