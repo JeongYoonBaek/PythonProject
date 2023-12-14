@@ -22,3 +22,7 @@ https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/
 231214 - 최종 검수 완료
 
 ppt : https://www.canva.com/design/DAF2vihE3xI/S447WmK0VCXIdQevq79Mrw/edit?utm_content=DAF2vihE3xI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+팀프로젝트 발표자료 압축파일입니다. (시연 영상 포함)
+
+https://drive.google.com/file/d/1RuOTgbNbarFYyVRPix0CCXA6gRTqq6nF/view?usp=sharing
