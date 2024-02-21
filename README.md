@@ -1,30 +1,18 @@
-231204 - 주제선정 및 도서 API (알라딘) KEY 발급
+## [팀프로젝트] pageTalk 챗봇 프로젝트
 
-API KEY : ttbbjy83741424002
+### 📆기간 12월 04일 ~ 12월 15일 
 
-알라딘 OPEN API 메뉴얼
-https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit
+### 💷[최종 PDF](https://github.com/JeongYoonBaek/PythonProject/blob/main/%ED%98%84%EC%98%A4/pageTalk%20%EC%B1%97%EB%B4%87%20ppt.pdf)
 
-231205 - 사람의 감정에 따른 책 카테고리 분류 작업 및 챗봇 기능구현 시작
-
-231206 - 감정 분류해서 독자에게 책 추천 기능구현 완료 
-
-231207 - 챗봇 디자인 작업 90% 완료
-
-231208 - 디자인 작업 완료 
-
-231211 - 추가 기능구현 작업 중
-
-231212 - PPT 자료 준비 중 
-
-231213 - 추가 기능구현 및 PPT 작업 완료 
-
-231214 - 최종 검수 완료
-
-ppt : https://www.canva.com/design/DAF2vihE3xI/S447WmK0VCXIdQevq79Mrw/edit?utm_content=DAF2vihE3xI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+<br>
+### 📓사용 언어
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&#x26;logo=python&logoColor=white"/></a> 
+<br>
 
 
+### 🛠 활용 도구
+<img src="https://img.shields.io/badge/pycharm-000000?style=for-the-badge&#x26;logo=pycharm&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/flask-g000000?style=for-the-badge&#x26;logo=flask&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/kakao-FFCD00?style=for-the-badge&#x26;logo=kakao&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/canva-00C4CC?style=for-the-badge&#x26;logo=canva&logoColor=white"/></a>
 
-팀프로젝트 발표자료 압축파일입니다. (시연 영상 포함)
-
-https://drive.google.com/file/d/1RuOTgbNbarFYyVRPix0CCXA6gRTqq6nF/view?usp=sharing
